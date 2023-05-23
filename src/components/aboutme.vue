@@ -18,7 +18,7 @@
     <h4 class="tldr">Skills: React.js | Angular | JS | Spring Java | AWS</h4>
     <h4 class="tldr">Interests: Full Stack Development, Front End Development, Back End Development</h4>
     <br />
-    <a href="https://www.linkedin.com/in/eyiara-oladipo-2b5ba2180/" target="_blank">
+    <a href="https://www.linkedin.com/in/raghavi-v/" target="_blank">
       <mainbtn bgcolor="linear-gradient(136deg, #2F7100, #48AE00)" textcolor="white">LinkedIn Profile</mainbtn>
     </a>
   </div>
