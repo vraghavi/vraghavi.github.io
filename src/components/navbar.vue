@@ -2,15 +2,19 @@
   <nav id="nav">
     <ul class="navbar">
       <span>
-        <div class="red"></div>
+        <div class="green"></div>
         <li tabindex="1" data-scrollto=".aboutme">About Me</li>
       </span>
       <span>
-        <div class="red"></div>
+        <div class="green"></div>
         <li tabindex="2" data-scrollto=".projects">Projects</li>
       </span>
       <span>
-        <div class="red"></div>
+        <div class="green"></div>
+        <li tabindex="3" data-scrollto=".skills">Skills</li>
+      </span>
+      <span>
+        <div class="green"></div>
         <li tabindex="3" data-scrollto=".contactme">Contact Me</li>
       </span>
     </ul>

@@ -2,10 +2,13 @@
   "name": "projectlisa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vraghavi.github.io",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "dependencies": {
     "ansi-html": "0.0.9",
@@ -13,6 +16,7 @@
     "core-js": "^3.6.5",
     "emailjs-com": "^3.2.0",
     "follow-redirects": "^1.14.9",
+    "gh-pages": "^5.0.0",
     "glob-parent": "^6.0.2",
     "minimalist": "^1.0.0",
     "minimist": "^1.2.8",

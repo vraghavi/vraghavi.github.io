@@ -1,67 +1,35 @@
 <template>
   <div style="display: block">
     <div class="blend">
-      <iframe
-        src="https://my.spline.design/untitled-29e7a58720caad55df89ef34c1581bbb/"
-        frameborder="0"
-        width="100%"
-        height="100%"
-      ></iframe>
+      <iframe class="iframe-blend" src="https://my.spline.design/untitled-81134118f1ddec3a420d15776e076b7b/"
+        frameborder="0" width="100%" height="100%"></iframe>
     </div>
     <div class="hero--header">
       <div class="arrange">
         <h5 class="intro">Hi, I am</h5>
         <h3 class="name">
-          Eyiara Olad<span><span class="letteri">i</span></span
-          >po
+          Raghavi Vannala
         </h3>
         <h5 class="my--desc">
-          Freshman at the University of Detroit Mercy studying Computer Science
+          Full Stack Web Application Developer
         </h5>
         <div class="CTAS">
-          <mainbtn
-            bgcolor="#DA0000"
-            textcolor="white"
-            @click="scrollDown('projects')"
-            >My Works</mainbtn
-          >
+          <mainbtn bgcolor="#48AE00" textcolor="white" @click="scrollDown('projects')">My Works</mainbtn>
 
-          <mainbtn
-            bgcolor="#white"
-            textcolor="black"
-            @click="scrollDown('contactme')"
-            >Contact Me</mainbtn
-          >
+          <mainbtn bgcolor="#white" textcolor="black" @click="scrollDown('contactme')">Contact Me</mainbtn>
         </div>
         <br />
         <div class="social-logo-section">
-          <a href="https://github.com/Ara-O" target="_blank">
-            <img
-              src="../assets/github-icon.jpg"
-              alt="Github icon"
-              title="Github Account"
-              class="social-logo"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/eyiara-oladipo-2b5ba2180/"
-            target="_blank"
-          >
-            <img
-              src="../assets/linkedin-logo.png"
-              alt="Linkedin icon"
-              title="Linkedin Account"
-              class="social-logo"
-              style="width: 21px"
-          /></a>
+          <a href="https://github.com/vraghavi" target="_blank">
+            <img src="../assets/github-icon.jpg" alt="Github icon" title="Github Account" class="social-logo" /></a>
+          <a href="https://www.linkedin.com/in/raghavi-v/" target="_blank">
+            <img src="../assets/linkedin-logo.png" alt="Linkedin icon" title="Linkedin Account" class="social-logo"
+              style="width: 21px" /></a>
         </div>
       </div>
     </div>
     <div class="threedots">
-      <div
-        tabindex="6"
-        class="indicator indicator one"
-        data-scrollto="hero--header"
-      ></div>
+      <div tabindex="6" class="indicator indicator one" data-scrollto="hero--header"></div>
       <div tabindex="7" class="indicator two" data-scrollto="aboutme"></div>
       <div tabindex="8" class="indicator three" data-scrollto="projects"></div>
       <div tabindex="9" class="indicator four" data-scrollto="contactme"></div>
@@ -84,13 +52,8 @@
         <div class="carousel__item">
           <section class="carouselproject">
             <div class="iframes">
-              <iframe
-                width="1135px"
-                height="750px"
-                :src="slide.iframe"
-                style="transform: scale(0.55) translate(-195px, -80px)"
-                frameborder="0"
-              ></iframe>
+              <iframe width="1135px" height="750px" :src="slide.iframe"
+                style="transform: scale(0.55) translate(-195px, -80px)" frameborder="0"></iframe>
             </div>
             <div class="carouseldesc">
               <h3 style="font-size: 33px; margin-bottom: -1px">
@@ -98,31 +61,23 @@
               </h3>
               <h3 class="languagesused">{{ slide.tools }}</h3>
               <div class="divider2"></div>
-              <h3
-                class="projectdesc"
-                style="
+              <h3 class="projectdesc" style="
                   width: 361px;
                   line-height: 28px;
                   font-weight: 100;
                   font-size: 20px;
                   text-align: left;
-                "
-              >
+                ">
                 {{ slide.desc }}
               </h3>
               <br />
               <div>
-                <a :href="slide.demo" target="_blank"
-                  ><mainbtn bgcolor="white" textcolor="black">Demo</mainbtn></a
-                >
+                <a :href="slide.demo" target="_blank">
+                  <mainbtn bgcolor="white" textcolor="black">Demo</mainbtn>
+                </a>
                 <a :href="slide.github" target="_blank">
-                  <mainbtn
-                    bgcolor="white"
-                    textcolor="black"
-                    style="margin-left: 20px"
-                    >Github</mainbtn
-                  ></a
-                >
+                  <mainbtn bgcolor="white" textcolor="black" style="margin-left: 20px">Github</mainbtn>
+                </a>
               </div>
             </div>
           </section>
@@ -138,88 +93,50 @@
     <div class="bothprojects">
       <!-- First project -->
       <section class="project1">
-        <project
-          githuburl="https://github.com/Ara-O/Anime_Finder"
-          demourl="https://animesfinder.netlify.app/"
-          iframeurl="https://animesfinder.netlify.app/"
-          previewurl="project1-preview.png"
-        >
-          <template #projectname>Anime Finder</template>
-          <template #toolsused>HTML | CSS | Javascript | Vue.js</template>
+        <project githuburl="https://code.vt.edu/vraghavi/coursequest"
+          demourl="https://vtechworks.lib.vt.edu/bitstream/handle/10919/114974/FinalDemo_v1.mp4?sequence=2&isAllowed=y"
+          iframeurl="https://vtechworks.lib.vt.edu/bitstream/handle/10919/114974/FinalDemo_v1.mp4?sequence=2&isAllowed=y"
+          previewurl="coursequest.png">
+          <template #projectname>CourseQuest</template>
+          <template #toolsused>React.js | Java Spring | MySQL | ElasticSearch | OpenAI | Google SSO</template>
           <template #description>
-            Used the Vue.js CLI, Javascript, and various API calls, to create a
-            site where users can search for, and read more about different anime
-            shows</template
-          >
+            Used the React.js, Java Spring, and various external services, to create a site where university affiliated
+            users can search and review courses provided by their univeristy.
+          </template>
         </project>
       </section>
       <!-- Second project -->
-      <section class="project2" style="display: none">
-        <project
-          githuburl="https://github.com/Ara-O/Windows10-mock"
-          demourl="https://windows10clone.netlify.app"
-          iframeurl="https://windows10clone.netlify.app"
-          previewurl="project2-preview.png"
-        >
-          <template #projectname>Windows 10 Clone</template>
-          <template #toolsused>HTML | CSS | Javascript | Vue.js</template>
+      <section class="project2">
+        <project githuburl="https://github.com/vraghavi/facedetectionapp"
+          demourl="https://vraghavi.github.io/facedetectionapp/" iframeurl="https://vraghavi.github.io/facedetectionapp/"
+          previewurl="facedetectionapp.png">
+          <template #projectname>Face Detection App</template>
+          <template #toolsused>React | Javascript | ClarifAI | Tachyons CSS</template>
           <template #description>
-            A clone of how Windows 10 looks like. From the lock screen and
-            password page, to the home screen with moveable icons.
+            A React.js App to detect Face using Clarifai face-detection model.
           </template>
         </project>
       </section>
       <!-- Third project -->
       <section class="project1">
-        <project
-          githuburl="https://github.com/Ara-O/Perishabl"
-          demourl="https://hungry-yonath-796229.netlify.app"
-          iframeurl="https://hungry-yonath-796229.netlify.app"
-          previewurl="project3-preview.png"
-        >
-          <template #projectname>Perishabl</template>
-          <template #toolsused>HTML | CSS | Javascript</template>
+        <project githuburl="https://github.com/vraghavi/robotfriends" demourl="https://vraghavi.github.io/robotfriends/"
+          iframeurl="https://vraghavi.github.io/robotfriends/" previewurl="robotfriends.png">
+          <template #projectname>Robot Friends</template>
+          <template #toolsused>HTML | CSS | React | Javascript</template>
           <template #description>
-            Simulated the landing page of a service designed to reduce food
-            waste by alerting users whenever their grocery items are about to
-            expire
+            Simple React Application showcasing contacts and their details with a search feature.
           </template>
         </project>
       </section>
       <!-- FOURTH PROJECT -->
       <section class="project2">
-        <project
-          githuburl="https://github.com/Ara-O/Project_Fit"
-          demourl="https://project-fit.netlify.app/"
-          iframeurl="https://project-fit.netlify.app/"
-          previewurl="project4-preview.png"
-        >
-          <template #projectname>Project Fit</template>
-          <template #toolsused>HTML | CSS | Javascript | Vue.js</template>
+        <project githuburl="https://github.com/vraghavi/mousai" demourl="https://timely-rabanadas-9e0625.netlify.app/"
+          iframeurl="https://timely-rabanadas-9e0625.netlify.app/" previewurl="mousai.png">
+          <template #projectname>MOUSAI</template>
+          <template #toolsused>System Design</template>
           <template #description>
-            Project Fit is a website that can be used to generate random
-            exercises with sets and repetitions. The advanced variation provides
-            the user to provide an option of selecting their rest time, number
-            of exercises, and difficulty.
-          </template>
-        </project>
-      </section>
-      <!-- FIFTH PROJECT -->
-      <section class="project1">
-        <project
-          githuburl="https://github.com/Ara-O/Budget-App"
-          demourl="https://budgeting-site.netlify.app/"
-          iframeurl="https://budgeting-site.netlify.app/"
-          previewurl="project5-preview.png"
-        >
-          <template #projectname>Budgeting Site</template>
-          <template #toolsused
-            >HTML | CSS | Javascript | Vue.js | Firebase</template
-          >
-          <template #description>
-            Created a website that can be used to track user expenses, income,
-            bills, and money/spending goals. Uses firebase realtime database and
-            authentication to keep track of user data.
+            System Design for an application called MOUSAI, a podcast hosting provider with live and recorded streaming
+            and different channels.
           </template>
         </project>
       </section>
@@ -254,44 +171,40 @@ export default {
     return {
       projects: [
         {
-          iframe: "https://animesfinder.netlify.app/",
-          projectname: "Anime Finder",
-          tools: "HTML | CSS | Javascript | Vue.js",
-          desc: "Used the Vue.js CLI, Javascript, and various API calls, to create a site where users can search for, and read more aboutdifferent anime shows",
-          demo: "https://animesfinder.netlify.app",
-          github: "https://github.com/Ara-O/Anime_Finder",
+          iframe: "https://vtechworks.lib.vt.edu/bitstream/handle/10919/114974/FinalDemo_v1.mp4?sequence=2&isAllowed=y",
+          projectname: "CourseQuest",
+          tools: "React.js | Java Spring | MySQL | ElasticSearch | OpenAI | Google SSO",
+          desc: "Used the React.js, Java Spring, and various external services, to create a site where university affiliated users can search and review courses provided by their univeristy.",
+          demo: "https://vtechworks.lib.vt.edu/bitstream/handle/10919/114974/FinalDemo_v1.mp4?sequence=2&isAllowed=y",
+          github: "https://code.vt.edu/vraghavi/coursequest",
+          previewurl: "",
         },
         {
-          iframe: "https://windows10clone.netlify.app",
-          projectname: "Windows 10 Clone",
-          tools: "HTML | CSS | Javascript | Vue.js",
-          desc: " A clone of how Windows 10 looks like. From the lock screen and password page, to the home screen with moveable icons.",
-          demo: "https://windows10clone.netlify.app",
-          github: "https://windows10clone.netlify.app",
+          iframe: "https://vraghavi.github.io/facedetectionapp/",
+          projectname: "Face Detection App",
+          tools: "React | Javascript | ClarifAI | Tachyons CSS",
+          desc: "A React.js App to detect Face using Clarifai face-detection model.",
+          demo: "https://vraghavi.github.io/facedetectionapp/",
+          github: "https://github.com/vraghavi/facedetectionapp",
+          previewurl: "",
         },
         {
-          iframe: "https://hungry-yonath-796229.netlify.app",
-          projectname: "Perishabl",
-          tools: "HTML | CSS | Javascript",
-          desc: "Simulated the landing page of a service designed to reduce food waste  by alerting users whenever their grocery items are about to expire ",
-          demo: "https://hungry-yonath-796229.netlify.app",
-          github: "https://github.com/Ara-O/Perishabl",
+          iframe: "https://vraghavi.github.io/robotfriends/",
+          projectname: "Robot Friends",
+          tools: "HTML | CSS | React | Javascript",
+          desc: "Simple React Application showcasing contacts and their details with a search feature.",
+          demo: "https://vraghavi.github.io/robotfriends/",
+          github: "https://github.com/vraghavi/robotfriends",
+          previewurl: "",
         },
         {
-          iframe: "https://project-fit.netlify.app/",
-          projectname: "Project Fit",
-          tools: "HTML | CSS | Javascript | Vue.js",
-          desc: "Project Fit is a website that can be used to generate random exercises with sets and repetitions.The advanced variation provides the user to provide an option of selecting their rest time, number of exercises, and difficulty.",
-          demo: "https://project-fit.netlify.app/",
-          github: "https://github.com/Ara-O/Project_Fit",
-        },
-        {
-          iframe: "https://budgeting-site.netlify.app/",
-          projectname: "Budgeting App",
-          tools: "HTML | CSS | Javascript | Vue.js | Firebase",
-          desc: "Created a website that can be used to track user expenses, income, bills, and money/spending goals. Uses firebase realtime database and authentication to keep track of user data.",
-          demo: "https://budgeting-site.netlify.app/",
-          github: "https://github.com/Ara-O/Budget-App",
+          iframe: "https://timely-rabanadas-9e0625.netlify.app/",
+          projectname: "MOUSAI",
+          tools: "System Design",
+          desc: "System Design for an application called MOUSAI, a podcast hosting provider with live and recorded streaming and different channels. ",
+          demo: "https://timely-rabanadas-9e0625.netlify.app/",
+          github: "https://github.com/vraghavi/mousai",
+          previewurl: "",
         },
       ],
     };
@@ -302,7 +215,7 @@ export default {
       document.querySelectorAll(".indicator").forEach((circle) => {
         circle.style.background = "rgb(160, 160, 160)";
       });
-      document.querySelector("." + current).style.background = "#da0000";
+      document.querySelector("." + current).style.background = "#48AE00";
     },
 
     scrollDown(section) {

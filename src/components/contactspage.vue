@@ -4,46 +4,27 @@
       <h3 class="contactmetext">Contact Me</h3>
       <form>
         <label for="organization" class="label">Name/Organization</label>
-        <input
-          type="text"
-          id="organization"
-          class="organization"
-          placeholder="Type Name/Organization"
-        />
+        <input type="text" id="organization" class="organization" placeholder="Type Name/Organization" />
         <label for=" message" class="label">Message</label>
-        <textarea
-          type="text"
-          id="message"
-          class="message"
-          placeholder="Send me a message"
-        />
+        <textarea type="text" id="message" class="message" placeholder="Send me a message" />
       </form>
       <br />
-      <mainbtn bgcolor="red" textcolor="white" class="sendemail"
-        >Send Message</mainbtn
-      >
+      <mainbtn bgcolor="#48AE00" textcolor="white" class="sendemail">Send Message</mainbtn>
     </section>
     <section class="businesscard">
-      <h3 style="font-size: 38px; letter-spacing: 0.7px">Eyiara Oladipo </h3>
-
-      <h3 class="extras">Email: Oladipoeyiara@gmail.com</h3>
+      <h3 style="font-size: 38px; letter-spacing: 0.7px">Raghavi Vannala </h3>
 
       <h3 class="extras">
-        <a
-          href="https://www.linkedin.com/in/eyiara-oladipo-2b5ba2180/"
-          target="_blank"
-          >LinkedIn: Oladipo Eyiara</a
-        >
+        <a href="mailto:vraghavi@vt.edu">Email: vraghavi@vt.edu</a>
+      </h3>
+
+      <h3 class="extras">
+        <a href="https://www.linkedin.com/in/raghavi-v/" target="_blank">LinkedIn: Raghavi Vannala</a>
       </h3>
       <h3 class="extras">
-        <a href="https://github.com/Ara-O" target="_blank">Github: Ara-O</a>
+        <a href="https://github.com/vraghavi" target="_blank">Github: vraghavi</a>
       </h3>
-      <img
-        src="../assets/aralogo--white_png.png"
-        loading="lazy"
-        alt="My logo"
-        class="mylogo"
-      />
+      <img src="../assets/icon.png" loading="lazy" alt="My logo" class="mylogo" />
     </section>
   </main>
 </template>
@@ -119,11 +100,11 @@ main {
 }
 
 .mylogo {
-    position: absolute;
-    width: 242px;
-    right: -21px;
-    bottom: 0px;
-    filter: contrast(6.5) brightness(3.5);
+  position: absolute;
+  width: 100px;
+  right: 35px;
+  bottom: 35px;
+  filter: contrast(6.5) brightness(3.5);
 }
 
 .businesscard h3 a {
@@ -188,16 +169,16 @@ export default {
   },
 
   mounted() {
-    emailjs.init("user_wE7Et0B04Z2GFOvM9I8vS");
+    emailjs.init("YugkyZezbOTRUpqNz");
 
     document.querySelector(".sendemail").addEventListener("click", function () {
       const organization = document.querySelector("#organization").value;
       const message = document.querySelector("#message").value;
-      emailjs.send("service_w07j94a", "template_o0zl6j9", {
+      emailjs.send("service_u1o6657", "template_2mnf7jv", {
         from_name: organization,
-        to_name: "Ara",
+        to_name: "Raghavi",
         message: message,
-      }).then(()=> {
+      }).then(() => {
         alert("Message Sent!")
       });
     });

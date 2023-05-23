@@ -1,27 +1,33 @@
 $gradient2: #454545;
-$accentcolor: #da0000;
+$accentcolor: #48AE00;
+
 @font-face {
   font-family: "Agency FB";
-  src: local("Agency FB"), url("../assets/Agency_FB.ttf");
+  src: local("Agency FB"), url("../assets/Raleway/Raleway-VariableFont_wght.ttf");
 }
+
 @font-face {
-  font-family: "Agency FBL";
-  src: local("Agency FBL"), url("../assets/agencyfb-light.ttf");
+  font-family: "Agency FBI";
+  src: local("Agency FBI"), url("../assets/Raleway/Raleway-Italic-VariableFont_wght.ttf");
 }
-@font-face {
-  font-family: "Agency FBLL";
-  src: local("Agency FBLL"), url("../assets/AgencyFBLight.ttf");
-}
+
+// @font-face {
+//   font-family: "Agency FBLL";
+//   src: local("Agency FBLL"), url("../assets/AgencyFBLight.ttf");
+// }
 * {
-  font-family: "Agency FBL";
+  font-family: "Agency FBI";
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
+
 body {
   margin: 0px;
   background: black;
 }
+
 img.bg-img {
   width: 975px;
   position: absolute;
@@ -30,6 +36,7 @@ img.bg-img {
   margin-left: -78px;
   filter: contrast(1) brightness(0.7);
 }
+
 .hero--header {
   height: 100vh;
   float: right;
@@ -39,6 +46,7 @@ img.bg-img {
   background: linear-gradient(90deg, black 49%, $gradient2 154%);
   width: 55%;
 }
+
 .blend {
   height: 100vh;
   width: 50%;
@@ -47,40 +55,46 @@ img.bg-img {
     linear-gradient(349deg, black, transparent 34%),
     linear-gradient(191deg, black -23%, transparent);
 }
+
 .name {
   color: white;
   z-index: 30;
-  font-family: "Agency FBL";
+  font-family: "Agency FB";
   font-size: 70px;
   margin-top: 15px;
   margin-bottom: 2px;
 }
+
 .arrange {
   margin-left: 186px;
   color: white;
   display: inline-block;
 }
+
 .intro {
   color: white;
   font-size: 16px;
-  font-family: "Agency FBL";
+  font-family: "Agency FB";
   margin-bottom: 3px;
   letter-spacing: 1.3px;
   font-weight: 300;
 }
+
 h5.my--desc {
   width: 341px;
   font-size: 18px;
   letter-spacing: 1.2px;
   margin-top: 18px;
   line-height: 25px;
-  font-family: "Agency FBL";
+  font-family: "Agency FB";
   font-weight: 300;
 }
+
 .CTAS {
   display: flex;
   column-gap: 20px;
 }
+
 .threedots {
   right: 30px;
   height: 100vh;
@@ -92,6 +106,7 @@ h5.my--desc {
   position: fixed;
   z-index: 500;
 }
+
 .indicator {
   height: 13px;
   background-color: rgb(160, 160, 160);
@@ -99,9 +114,11 @@ h5.my--desc {
   border-radius: 20px;
   cursor: pointer;
 }
+
 .one {
   background-color: $accentcolor;
 }
+
 // .name::after {
 //   content: "";
 //   position: absolute;
@@ -152,30 +169,35 @@ h5.my--desc {
   transform: translateX(0px);
   opacity: 1;
 }
+
 .aboutmedesc {
   margin-top: -20px;
   font-size: 18px;
   letter-spacing: 1.13px;
   line-height: 24px;
-  font-family: "Agency FBLL";
+  font-family: "Agency FB";
   font-weight: 100;
 }
+
 .aboutmetext {
   display: flex;
   font-size: 57px;
   align-items: flex-end;
 }
+
 .divider-div {
   display: flex;
   justify-content: center;
   padding-top: 200px;
 }
+
 .divider {
   width: 9px;
-  background: #ec0000;
+  background: #48AE00;
   height: 126px;
   border-radius: 41px;
 }
+
 .aboutme--right {
   width: 377px;
   padding-left: 43px;
@@ -192,6 +214,7 @@ h5.my--desc {
   font-weight: 100;
   letter-spacing: 0.7px;
 }
+
 .projects {
   // padding-left: 40px;
   background: linear-gradient(85deg, black 72%, #454545 138%);
@@ -277,7 +300,7 @@ section.project2 {
   display: none;
 }
 
-.interaction-note{
+.interaction-note {
   text-align: center;
   font-size: 24px;
   margin-bottom: -3px;
@@ -349,12 +372,13 @@ section.project2 {
     display: none;
   }
 
-  .interaction-note{
+  .interaction-note {
     display: none;
   }
 }
 
 @media (max-width: 1384px) {
+
   .project1image,
   .project2image {
     width: 33vw;
@@ -409,6 +433,7 @@ section.project2 {
   .projects {
     padding-left: 0px;
   }
+
   .project1image,
   .project2image {
     display: none;
@@ -515,7 +540,7 @@ section.project2 {
   height: 9px;
   border: 0;
   cursor: pointer;
-  background-color: #ff7373;
+  background-color: #BDE2A2;
 }
 
 .carousel__pagination {

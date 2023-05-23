@@ -1,16 +1,11 @@
 <template>
-
- 
   <!-- Setting the main color variable to the background color
 so that the color of the hover effect is based on the button's background -->
-  <button
-    class="mainbtn"
-    :style="{
-      background: bgcolor,
-      color: textcolor,
-      '--maincolor': bgcolor,
-    }"
-  >
+  <button class="mainbtn" :style="{
+    background: bgcolor,
+    color: textcolor,
+    '--maincolor': bgcolor,
+  }">
     <slot></slot>
   </button>
 </template>
@@ -24,7 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 :root {
-  --maincolor: rgb(218, 0, 0);
+  --maincolor: rgb(72, 174, 0);
 }
 
 @mixin psuedostyle {
@@ -54,6 +49,7 @@ export default {
   border: solid 0px var(--maincolor);
   transition: all 100ms ease-in-out;
 }
+
 .mainbtn::before {
   @include psuedostyle;
   left: -1px;
@@ -62,6 +58,7 @@ export default {
   border: solid 0px var(--maincolor);
   transition: all 100ms ease-in-out;
 }
+
 .mainbtn:hover::before {
   @include psuedostyle;
   border: solid 1px var(--maincolor);
@@ -71,6 +68,7 @@ export default {
   border-right: none;
   border-top: none;
 }
+
 .mainbtn:hover::after {
   @include psuedostyle;
   border: solid 1px var(--maincolor);
